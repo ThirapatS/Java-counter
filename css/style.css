@@ -1,0 +1,72 @@
+@font-face {
+    font-family: con;
+    src: url(../fonts/CONSOLA.TTF);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: con;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../img/circuit-7955446_1280.png);
+    background-position: center;
+    background-size: cover;
+
+    && .box{
+        border: 2px solid #000;
+        padding: 20px;
+        text-align: center;
+        background: #fff;
+        border-radius: 5px;
+
+        && h1{
+            margin: 20px;
+            font-size: 50px;
+        }
+        && p{
+            color: #000000;
+            font-size: 50px;
+            margin: 50px;
+        }
+        && .button-group{
+            && button{
+                width: 200px;
+                padding: 10px 15px;
+                font-size: 20px;
+                cursor: pointer;
+                background: none;
+            }                
+            && button.decrease{
+                border: 2px solid #cc0000;
+                background: none;
+                color: #cc0000;
+            }
+            && button.decrease:hover{
+                background: #cc0000;
+                color: #fff;
+            }
+            && button.reset{
+                color: rgb(0, 106, 255);
+                border: 2px solid rgb(0, 106, 255);
+            }
+            && button.reset:hover{
+                color: rgb(255, 255, 255);
+                background: rgb(0, 106, 255);
+            }
+            && button.increase{
+                color: rgb(0, 198, 0);
+                border: 2px solid rgb(0, 198, 0);
+            }
+            && button.increase:hover{
+                color: rgb(255, 255, 255);
+                background:rgb(0, 198, 0);
+            }
+        }
+    }
+}
